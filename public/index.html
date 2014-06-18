@@ -23,13 +23,13 @@
       class="bio-image shadowed" />
 
       <div class="bio-text">
-        <h1 class="fullName"><%= fullName %></h1>
+        <h1 class="fullName"><%= fullName ? fullName : "Edit me" %></h1>
             <input class="edit-name hidden-edit" placeholder="Enter a name">
 
-        <h2 class="bio"><%= bio %></h2>
+        <h2 class="bio"><%= bio ? bio: "Add a bio" %></h2>
             <input class="edit-bio hidden-edit" placeholder="Enter a bio">
 
-        <h3 class="mission"><%= mission %></h3>
+        <h3 class="mission"><%= mission ? mission : "Add a mission" %></h3>
             <input class="edit-mission hidden-edit" placeholder="Enter a mission">
       </div>
     </div>
@@ -124,6 +124,7 @@
   <script src="../app/assets/javascripts/models/project.js"></script>
   <script src="../app/assets/javascripts/models/user.js"></script>
   <script src="../app/assets/javascripts/collections/project_list.js"></script>
+  <script src="../app/assets/javascripts/collections/user_list.js"></script>
   <script src="../app/assets/javascripts/views/project_view.js"></script>
   <script src="../app/assets/javascripts/views/user_view.js"></script>
   <script src="../app/assets/javascripts/app.js"></script>

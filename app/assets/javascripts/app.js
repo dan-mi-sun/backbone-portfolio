@@ -1,13 +1,16 @@
 $(document).ready(function() {
 
   //Instantiating new user object
-  var user = new app.models.User({
-    fullName: "John",
-    bio: "A being",
-    mission: "time travel"
-  });
+  // var user = new app.models.User({
+  //   fullName: "John",
+  //   bio: "A being",
+  //   mission: "time travel"
+  // });
+  var users = new app.collections.UserList();
+  users.fetch();
+  if(users.length == 0) users.add({});
 
-  var userView = new app.views.UserView({ model: user });
+  var userView = new app.views.UserView({ model: users.models[0] });
     userView.render();
     // model: user
 

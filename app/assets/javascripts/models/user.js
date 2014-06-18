@@ -1,6 +1,11 @@
 app.models.User = Backbone.Model.extend({
 
-  localStorage: new Backbone.LocalStorage('user'),
+  // localStorage: new Backbone.LocalStorage('user'),
+  defaults: {
+    name: null,
+    bio: null,
+    mission: null
+  },
 
   validate: function() {
     if(this.attributes.fullName === "" || this.get('fullName') === undefined) {
