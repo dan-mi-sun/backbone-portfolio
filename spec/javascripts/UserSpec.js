@@ -29,4 +29,31 @@ describe("A User", function() {
     });
   });
 
+  describe("projects", function(){
+    beforeEach(function() {
+      //wipe old project storage
+      // localStorage.clear();
+
+      var someoneElse = new app.models.User({fullName: "Bob"});
+      someoneElse.save();
+      someoneElse.projects.create({ title: "Test", url: "/" });
+
+      var project = new app.models.Project({
+        title: "A new project"
+      });
+      user.save();
+      user.projects.create(project);
+    });
+
+    it("should store the projects as well", function(){
+      saved_user = new app.models.User({ id: user.id });
+      saved_user.fetch();
+      expect(saved_user.projects.length).toEqual(1);
+    });
+  });
+
+    afterEach(function() {
+      localStorage.clear();
+    });
+
 });

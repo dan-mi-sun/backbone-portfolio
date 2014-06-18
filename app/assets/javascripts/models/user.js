@@ -1,10 +1,17 @@
 app.models.User = Backbone.Model.extend({
 
-  // localStorage: new Backbone.LocalStorage('user'),
+  localStorage: new Backbone.LocalStorage('user'),
   defaults: {
     name: null,
     bio: null,
     mission: null
+  },
+
+  initialize: function () {
+    this.projects = new app.collections.ProjectList();
+    this.projects.user = this;
+    // this.projects.fetch();
+    this.bind("sync", this.fetchProjects);
   },
 
   validate: function() {
@@ -16,5 +23,12 @@ app.models.User = Backbone.Model.extend({
     //   return errors;
     // }
     };
+  },
+
+  fetchProjects: function() {
+    if(this.id) {
+      this.projects.fetch();
+      this.projects.reset(this.projects.where({ user_id: this.id }));
+    }
   }
 });

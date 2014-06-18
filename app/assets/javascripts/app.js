@@ -10,6 +10,9 @@ $(document).ready(function() {
   users.fetch();
   if(users.length == 0) users.add({});
 
+  var user = users.models[0];
+  user.fetch();
+
   var userView = new app.views.UserView({ model: users.models[0] });
     userView.render();
     // model: user

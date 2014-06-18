@@ -23,6 +23,7 @@ describe("A Project", function() {
 
   describe("Persistance in local storage", function() {
     beforeEach(function() {
+      project.localStorage = new Backbone.LocalStorage('potfolio');
       project.save();
     });
 
