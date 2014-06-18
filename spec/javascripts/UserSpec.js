@@ -25,6 +25,7 @@ describe("A User", function() {
 
     it("should not be valid without a name", function() {
       expect(user.isValid()).toBeFalsy();
+      // expect(user.validationError.message).toEqual(["Name can't be blank"]);
     });
   });
 

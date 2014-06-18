@@ -1,4 +1,19 @@
 $(document).ready(function() {
+
+  //Instantiating new user object
+  var user = new app.models.User({
+    fullName: "John",
+    bio: "A being",
+    mission: "time travel"
+  });
+
+  var userView = new app.views.UserView({ model: user });
+    userView.render();
+    // model: user
+
+  // var render_view = user_view.render().el;
+  // $('#bio').append(render_view);
+
   // Try to find projects already in the local storage
   var projectList = new app.collections.ProjectList();
   projectList.fetch();
