@@ -12,38 +12,54 @@
   <section id="navigation">
   </section>
 
-  <section id="content">
+  <main id="content">
+  <!-- Our views go in here -->
+  </main>
 
-    <div id="user">
-    </div>
+  <script type="text/template" id="user-list-template">
+    <section id="user-list">
+      <ul id="users">
+        <% users.each(function(user) { %>
+          <li>
+            <img src="<%= user.get('image_url') %>" alt="<%= user.get('fullName') %>" width=80 height=80 class="user-list-thumb" />
+            <h3><%= user.get('fullName') %></h3>
+            <a href="#users/<%= user.get('id') %>" data-user-id="<%= user.get('id') %>" class="profile-link">Profile</a>
+          </li>
+        <% }); %>
+      </ul>
+      
+      <div class="clear"></div>
+    </section>
+  </script>
 
-    <script type="text/template" id="bio-template">
+  <script type="text/template" id="bio-template">
     <div id="bio">
-        <img src="uploads/me.jpg" width="200" height="200" alt="Dan Garland"
+        <img src="<%= image_url %>" width="200" height="200" alt="<%= fullName %>"
       class="bio-image shadowed" />
 
-      <div class="bio-text">
-        <h1 class="fullName"><%= fullName ? fullName : "Edit me" %></h1>
-            <input class="edit-name hidden-edit" placeholder="Enter a name">
+        <div class="bio-text">
+          <h1 class="fullName"><%= fullName ? fullName : "Edit me" %></h1>
+          <input class="edit-name hidden-edit" placeholder="Enter a name">
 
-        <h2 class="bio"><%= bio ? bio: "Add a bio" %></h2>
-            <input class="edit-bio hidden-edit" placeholder="Enter a bio">
+          <h2 class="bio"><%= bio ? bio: "Add a bio" %></h2>
+          <input class="edit-bio hidden-edit" placeholder="Enter a bio">
 
-        <h3 class="mission"><%= mission ? mission : "Add a mission" %></h3>
-            <input class="edit-mission hidden-edit" placeholder="Enter a mission">
+          <h3 class="mission"><%= mission ? mission : "Add a mission" %></h3>
+          <input class="edit-mission hidden-edit" placeholder="Enter a mission">
+        </div>
       </div>
+
+    <div id="projects">
+      <h2>Recent Project Work</h2>
+
+      <div id="project-list">
+
+      <div class="clear"></div>
     </div>
-    </script>
+  </script>
 
-      <div id="projects">
-        <h2>Recent Project Work</h2>
-
-        <div id="project-list">
-        </div>
-
-        <script type="text/template" id="project-template">
-          <div class="sortable">
-        </div>
+  <script type="text/template" id="project-template">
+    <div class="sortable"></div>
 
         <div class="info">
           <img src="uploads/project.jpg" width="350" height="165"
@@ -104,17 +120,14 @@
         <div class="remove-project">
           Remove Project
         </div>
-
-        </script>
-
         <div class="clear"></div>
-      </div>
-    </section>
+    </div>
+  </script>
 
-    <section id="footer">
-    </section>
+  <section id="footer">
+  </section>
 
-    <!-- Load application scripts at the end of the body, so that we
+  <!-- Load application scripts at the end of the body, so that we
   don't slow up the loading time of the DOM -->
   <script src="../app/assets/javascripts/jquery-1.9.1.min.js"></script>
   <script src="../app/assets/javascripts/underscore-min.js"></script>
@@ -128,6 +141,8 @@
   <script src="../app/assets/javascripts/views/project_view.js"></script>
   <script src="../app/assets/javascripts/views/user_view.js"></script>
   <script src="../app/assets/javascripts/app.js"></script>
+  <script src="../app/assets/javascripts/views/user_list_view.js"></script>
+  <script src="../app/assets/javascripts/routes.js"></script>
 </body>
 
 </html>
