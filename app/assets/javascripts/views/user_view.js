@@ -1,6 +1,6 @@
 app.views.UserView = Backbone.View.extend({
 
-  el: "#user",
+  el: "#content",
   template:  _.template($('#bio-template').html()),
   events: {
     "dblclick h1.fullName": "editName",
@@ -12,6 +12,9 @@ app.views.UserView = Backbone.View.extend({
   },
 
   render: function() {
+  //Render the user bio section
+  this.$el.html(this.template(this.model.attributes));
+
   // Create a dummy project if there isn't one already
   if(this.model.projects.length == 0) {
     this.model.projects.add({
@@ -20,14 +23,19 @@ app.views.UserView = Backbone.View.extend({
       body: "Click to edit"
     });
   }
-  $('#project-list').html("");
 
+  //Clear old projects from view
+  $('#project-list').html("");
+  
+   // Render each project... sort of like a partial...
   this.model.projects.each(function(project) {
     var view = new app.views.ProjectView({ model: project });
     $('#project-list').append(view.render().el);
   });
-    this.$el.html(this.template(this.model.attributes)); 
+
+   // Redraw the page if the user model changes
     this.listenTo(this.model, "change", this.render);
+
     return this;
     },
 
