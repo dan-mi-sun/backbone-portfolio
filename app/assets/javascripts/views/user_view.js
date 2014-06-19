@@ -3,11 +3,11 @@ app.views.UserView = Backbone.View.extend({
   el: "#user",
   template:  _.template($('#bio-template').html()),
   events: {
-    "dblclick h1.fullName": "editName",
+    "dblclick h1.fullName": "editAttribute",
     "change .edit-name": "updateName",
-    "dblclick h2.bio": "editBio",
+    "dblclick h1.fullName": "editAttribute",
     "change .edit-bio": "updateBio",
-    "dblclick h3.mission": "editMission",
+    "dblclick h1.fullName": "editAttribute",
     "change .edit-mission": "updateMission"
   },
 
@@ -31,8 +31,8 @@ app.views.UserView = Backbone.View.extend({
     return this;
     },
 
-  editName: function(e) {
-    $(e.currentTarget).hide().next('.edit-name').fadeIn();
+  editAttribute function(e) {
+    $(e.currentTarget).hide().next('.hidden-edit').fadeIn();
   },
 
   updateName: function(e) {
@@ -40,17 +40,9 @@ app.views.UserView = Backbone.View.extend({
     this.model.save();
   },
 
-  editBio: function(e) {
-    $(e.currentTarget).hide().next('.edit-bio').fadeIn();
-  },
-
   updateBio: function(e) {
     this.model.set('bio', e.currentTarget.value);
     this.model.save();
-  },
-
-  editMission: function(e) {
-    $(e.currentTarget).hide().next('.edit-mission').fadeIn();
   },
 
   updateMission: function(e) {
