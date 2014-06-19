@@ -186,3 +186,12 @@ ul.skill-list li {
 .clear {
   clear: both;
 }
+
+.user-list-thumb {
+  float: left;
+  margin-right: 20px;
+}
+
+#users li {
+  clear: left;
+}
