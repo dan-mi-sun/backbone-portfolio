@@ -20,6 +20,7 @@ app.views.UserView = Backbone.View.extend({
       body: "Click to edit"
     });
   }
+  $('#project-list').html("");
 
   this.model.projects.each(function(project) {
     var view = new app.views.ProjectView({ model: project });
@@ -28,7 +29,6 @@ app.views.UserView = Backbone.View.extend({
     this.$el.html(this.template(this.model.attributes)); 
     this.listenTo(this.model, "change", this.render);
     return this;
-    q
     },
 
   editName: function(e) {
