@@ -80,7 +80,7 @@ ul {
 }
 
 .sortable {
-  background-image: url(../images/sort-arrows.png);
+  background-image: url(/assets/sort-arrows.png);
   width: 20px;
   height: 35px;
   cursor: move;
@@ -151,7 +151,7 @@ ul.skill-list li {
 .skill .delete {
   display: inline-block;
   text-indent: -9999px;
-  background: transparent url("../images/remove-button.png") no-repeat 0px 0px;
+  background: transparent url("/assets/remove-button.png") no-repeat 0px 0px;
   width: 17px;
   height: 17px;
   cursor:pointer;
@@ -162,7 +162,7 @@ ul.skill-list li {
 }
 
 .add-skill {
-  background: transparent url("../images/add-button.png");
+  background: transparent url("/assets/add-button.png");
   text-indent: -9999px;
   display: inline-block;
   width: 25px;
@@ -174,7 +174,7 @@ ul.skill-list li {
   width: 27px;
   height: 27px;
   text-indent: -9999px;
-  background: transparent url("../images/delete-icons.png") no-repeat;
+  background: transparent url("/assets/delete-icons.png") no-repeat;
   cursor: pointer;
   margin-left: 870px;
 }
