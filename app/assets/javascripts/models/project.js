@@ -1,6 +1,7 @@
 app.models.Project = Backbone.Model.extend({
 
   // localStorage: new Backbone.LocalStorage('portfolio'),
+  url: "/projects",
 
   validate: function() {
     if(this.attributes.url === "") {

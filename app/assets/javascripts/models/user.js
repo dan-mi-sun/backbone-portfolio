@@ -1,11 +1,12 @@
 app.models.User = Backbone.Model.extend({
 
-  localStorage: new Backbone.LocalStorage('user'),
-  defaults: {
-    name: null,
-    bio: null,
-    mission: null
-  },
+  url: "/users",
+
+  // defaults: {
+  //   name: null,
+  //   bio: null,
+  //   mission: null
+  // },
 
   initialize: function () {
     this.projects = new app.collections.ProjectList();
