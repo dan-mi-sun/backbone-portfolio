@@ -4,7 +4,7 @@ describe("A User", function() {
 
   beforeEach(function() {
     user = new app.models.User({
-      fullName: "Daniel Sun",
+      name: "Daniel Sun",
       bio: "Wax on, wax off",
       imgUrl: "#",
       mission: "Time travel"
@@ -14,14 +14,14 @@ describe("A User", function() {
   });
 
   it("should be able to retreive the name", function() {
-    expect(user.get("fullName")).toEqual("Daniel Sun");
+    expect(user.get("name")).toEqual("Daniel Sun");
   });
 
 
   describe("validation", function() {
     beforeEach(function() {
       user = new app.models.User({
-        fullName: ""
+        name: ""
       });
     });
 
@@ -36,7 +36,7 @@ describe("A User", function() {
       //wipe old project storage
       // localStorage.clear();
       
-      var someoneElse = new app.models.User({fullName: "Bob"});
+      var someoneElse = new app.models.User({name: "Bob"});
       someoneElse.save();
       someoneElse.projects.create({ title: "Test" });
 
@@ -51,7 +51,7 @@ describe("A User", function() {
       var lastAjaxCallArgs = $.ajax.calls[0].args[0];
       expect(lastAjaxCallArgs.url).toEqual("/users");
       expect(lastAjaxCallArgs.type).toEqual("POST");
-      expect(lastAjaxCallArgs.data).toEqual(JSON.stringify({fullName: "Bob"}));
+      expect(lastAjaxCallArgs.data).toEqual(JSON.stringify({name: "Bob"}));
 
       var lastAjaxCallArgs = $.ajax.calls[1].args[0];
       expect(lastAjaxCallArgs.url).toEqual("/projects");
@@ -62,7 +62,7 @@ describe("A User", function() {
       expect(lastAjaxCallArgs.url).toEqual("/users");
       expect(lastAjaxCallArgs.type).toEqual("POST");
       expect(lastAjaxCallArgs.data).toEqual(JSON.stringify({
-        fullName: "Daniel Sun",
+        name: "Daniel Sun",
         bio: "Wax on, wax off",
         imgUrl: "#",
         mission: "Time travel"

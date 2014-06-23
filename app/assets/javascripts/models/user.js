@@ -1,6 +1,6 @@
 app.models.User = Backbone.Model.extend({
 
-  url: "/users",
+  urlRoot: "/users",
 
   // defaults: {
   //   name: null,
@@ -16,7 +16,7 @@ app.models.User = Backbone.Model.extend({
   },
 
   validate: function() {
-    if(this.attributes.fullName === "" || this.get('fullName') === undefined) {
+    if(this.attributes.name === "" || this.get('name') === undefined) {
       return "Name can't be blank"; 
     };
   },

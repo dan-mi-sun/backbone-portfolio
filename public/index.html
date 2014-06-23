@@ -21,8 +21,8 @@
       <ul id="users">
         <% users.each(function(user) { %>
           <li>
-            <img src="<%= user.get('image_url') %>" alt="<%= user.get('fullName') %>" width=80 height=80 class="user-list-thumb" />
-            <h3><%= user.get('fullName') %></h3>
+            <img src="<%= user.get('image_url') %>" alt="<%= user.get('name') %>" width=80 height=80 class="user-list-thumb" />
+            <h3><%= user.get('name') %></h3>
             <a href="#users/<%= user.get('id') %>" data-user-id="<%= user.get('id') %>" class="profile-link">Profile</a>
           </li>
         <% }); %>
@@ -34,11 +34,11 @@
 
   <script type="text/template" id="bio-template">
     <div id="bio">
-        <img src="<%= image_url %>" width="200" height="200" alt="<%= fullName %>"
+        <img src="<%= image_url ? image_url : 'uploads/me.jpg'  %>" width="200" height="200" alt="<%= name %>"
       class="bio-image shadowed" />
 
         <div class="bio-text">
-          <h1 class="fullName"><%= fullName ? fullName : "Edit me" %></h1>
+          <h1 class="name"><%= name ? name : "Edit me" %></h1>
           <input class="edit-name hidden-edit" placeholder="Enter a name">
 
           <h2 class="bio"><%= bio ? bio: "Add a bio" %></h2>
