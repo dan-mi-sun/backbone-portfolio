@@ -16,113 +16,8 @@
   <!-- Our views go in here -->
   </main>
 
-  <script type="text/template" id="user-list-template">
-    <section id="user-list">
-      <ul id="users">
-        <% users.each(function(user) { %>
-          <li>
-            <img src="<%= user.get('image_url') %>" alt="<%= user.get('name') %>" width=80 height=80 class="user-list-thumb" />
-            <h3><%= user.get('name') %></h3>
-            <a href="#users/<%= user.get('id') %>" data-user-id="<%= user.get('id') %>" class="profile-link">Profile</a>
-          </li>
-        <% }); %>
-      </ul>
-      
-      <div class="clear"></div>
-    </section>
-  </script>
 
-  <script type="text/template" id="bio-template">
-    <div id="bio">
-        <img src="<%= image_url ? image_url : 'uploads/me.jpg'  %>" width="200" height="200" alt="<%= name %>"
-      class="bio-image shadowed" />
 
-        <div class="bio-text">
-          <h1 class="name"><%= name ? name : "Edit me" %></h1>
-          <input class="edit-name hidden-edit" placeholder="Enter a name">
-
-          <h2 class="bio"><%= bio ? bio: "Add a bio" %></h2>
-          <input class="edit-bio hidden-edit" placeholder="Enter a bio">
-
-          <h3 class="mission"><%= mission ? mission : "Add a mission" %></h3>
-          <input class="edit-mission hidden-edit" placeholder="Enter a mission">
-        </div>
-      </div>
-
-    <div id="projects">
-      <h2>Recent Project Work</h2>
-
-      <div id="project-list">
-
-      <div class="clear"></div>
-    </div>
-  </script>
-
-  <script type="text/template" id="project-template">
-    <div class="sortable"></div>
-
-        <div class="info">
-          <img src="uploads/project.jpg" width="350" height="165"
-          alt="My Amazing Project" class="project-image shadowed" />
-
-          <div class="project-details">
-            <h3 class="project-name">
-              <%= title %>
-            </h3>
-
-            <input class="edit-title hidden-edit" placeholder="Enter a title">
-
-            <a href="<%= url %>">
-              <%= url %>
-            </a>
-
-            <div class="skills">
-              <span class="skill-label">
-                Skills:
-              </span>
-
-              <ul class="skill-list">
-                <li class="skill">
-                  <span class="name">Ruby</span>
-                  <span class="delete">Remove</span>
-                </li>
-                <li class="skill">
-                  <span class="name">Rails</span>
-                  <span class="delete">Remove</span>
-                </li>
-                <li class="skill">
-                  <span class="name">AJAX</span>
-                  <span class="delete">Remove</span>
-                </li>
-                <li class="skill">
-                  <span class="name">HTML 5</span>
-                  <span class="delete">Remove</span>
-                </li>
-                <li class="skill">
-                  <span class="name">CSS</span>
-                  <span class="delete">Remove</span>
-                </li>
-                <li class="skill">
-                  <span class="name">Javascript</span>
-                  <span class="delete">Remove</span>
-                </li>
-              </ul>
-
-              <span class="add-skill">Add Skill</span>
-            </div>
-
-            <div class="body">
-              <%= body %>
-            </div>
-          </div>
-        </div>
-
-        <div class="remove-project">
-          Remove Project
-        </div>
-        <div class="clear"></div>
-    </div>
-  </script>
 
   <section id="footer">
   </section>
@@ -132,10 +27,14 @@
   <script src="/assets/jquery-1.9.1.min.js"></script>
   <script src="/assets/underscore-min.js"></script>
   <script src="/assets/backbone.js"></script>
+  <script src="/assets/ejs_production.js"></script>
   <script src="/assets/backbone.localStorage-min.js"></script>
   <script src="/assets/boot.js"></script>
   <script src="/assets/models/project.js"></script>
   <script src="/assets/models/user.js"></script>
+  <script src="/assets/templates/project-template.jst.ejs"></script>
+  <script src="/assets/templates/user-template.jst.ejs"></script>
+  <script src="/assets/templates/user-list-template.jst.ejs"></script>
   <script src="/assets/collections/project_list.js"></script>
   <script src="/assets/collections/user_list.js"></script>
   <script src="/assets/views/project_view.js"></script>

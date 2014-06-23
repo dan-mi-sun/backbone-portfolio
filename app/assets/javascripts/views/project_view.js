@@ -2,7 +2,7 @@ app.views.ProjectView = Backbone.View.extend({
 
   tagName: 'div',
   className: 'project',
-  template: _.template($('#project-template').html()),
+  template: JST['templates/project-template'],
   events: {
     'dblclick .project-name': 'editProjectName',
     'keypress .edit-title': 'updateTitle'

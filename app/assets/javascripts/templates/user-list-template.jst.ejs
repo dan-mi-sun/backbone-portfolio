@@ -1,0 +1,15 @@
+<script type="text/template" id="user-list-template">
+  <section id="user-list">
+      <ul id="users">
+        <% users.each(function(user) { %>
+ <li>
+            <img src="<%= user.get('image_url') %>" alt="<%= user.get('name') %>" width=80 height=80 class="user-list-thumb" />
+            <h3><%= user.get('name') %></h3>
+            <a href="#users/<%= user.get('id') %>" data-user-id="<%= user.get('id') %>" class="profile-link">Profile</a>
+          </li>
+        <% }); %>
+      </ul>
+
+      <div class="clear"></div>
+    </section>
+</script>

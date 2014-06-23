@@ -1,7 +1,7 @@
 app.views.UserListView = Backbone.View.extend({
 
   el: "#content",
-  template: _.template($('#user-list-template').html()),
+  template: JST['templates/user-list-view'],
   events: {
     "click .profile-link": "showProfile"
   },
