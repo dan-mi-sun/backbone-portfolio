@@ -1,26 +1,23 @@
-<script type="text/template" id="bio-template">
+<div id="bio">
+  <img src="<%= image_url ? image_url : 'uploads/me.jpg'  %>" width="200" height="200" alt="<%= name %>"
+  class="bio-image shadowed" />
 
-  <div id="bio">
-        <img src="<%= image_url ? image_url : 'uploads/me.jpg'  %>" width="200" height="200" alt="<%= name %>"
-      class="bio-image shadowed" />
+  <div class="bio-text">
+    <h1 class="name"><%= name ? name : "Edit me" %></h1>
+    <input class="edit-name hidden-edit" placeholder="Enter a name">
 
-        <div class="bio-text">
-          <h1 class="name"><%= name ? name : "Edit me" %></h1>
-          <input class="edit-name hidden-edit" placeholder="Enter a name">
+    <h2 class="bio"><%= bio ? bio: "Add a bio" %></h2>
+    <input class="edit-bio hidden-edit" placeholder="Enter a bio">
 
-          <h2 class="bio"><%= bio ? bio: "Add a bio" %></h2>
-          <input class="edit-bio hidden-edit" placeholder="Enter a bio">
+    <h3 class="mission"><%= mission ? mission : "Add a mission" %></h3>
+    <input class="edit-mission hidden-edit" placeholder="Enter a mission">
+  </div>
+</div>
 
-          <h3 class="mission"><%= mission ? mission : "Add a mission" %></h3>
-          <input class="edit-mission hidden-edit" placeholder="Enter a mission">
-        </div>
-      </div>
+<div id="projects">
+  <h2>Recent Project Work</h2>
 
-    <div id="projects">
-      <h2>Recent Project Work</h2>
+  <div id="project-list">
 
-      <div id="project-list">
-
-      <div class="clear"></div>
-    </div>
-</script>
+    <div class="clear"></div>
+  </div>

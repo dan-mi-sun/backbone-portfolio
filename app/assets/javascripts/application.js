@@ -13,4 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require ./lib/underscore-min
+//= require boot
+//= require_tree ./lib
+//= require_tree ./models
+//= require_tree ./collections
+//= require_tree ./templates
+//= require_tree ./views
+//= require routes
+//= require app
 //= require_tree .

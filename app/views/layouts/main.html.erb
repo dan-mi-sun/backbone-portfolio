@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>My Amazing Fat Client Portfolio Builder</title>
-  <link rel="stylesheet" href="/assets/main.css">
+  <%= stylesheet_link_tag :application %>
 </head>
 
 <body>
@@ -14,6 +14,7 @@
 
   <main id="content">
   <!-- Our views go in here -->
+  <%= yield %>
   </main>
 
 
@@ -24,6 +25,9 @@
 
   <!-- Load application scripts at the end of the body, so that we
   don't slow up the loading time of the DOM -->
+
+  <%= javascript_include_tag :application %>
+  <!--
   <script src="/assets/jquery-1.9.1.min.js"></script>
   <script src="/assets/underscore-min.js"></script>
   <script src="/assets/backbone.js"></script>
@@ -42,6 +46,7 @@
   <script src="/assets/app.js"></script>
   <script src="/assets/views/user_list_view.js"></script>
   <script src="/assets/routes.js"></script>
+  -->
 </body>
 
 </html>
