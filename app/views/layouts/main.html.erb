@@ -13,40 +13,13 @@
   </section>
 
   <main id="content">
-  <!-- Our views go in here -->
   <%= yield %>
   </main>
-
-
-
 
   <section id="footer">
   </section>
 
-  <!-- Load application scripts at the end of the body, so that we
-  don't slow up the loading time of the DOM -->
-
   <%= javascript_include_tag :application %>
-  <!--
-  <script src="/assets/jquery-1.9.1.min.js"></script>
-  <script src="/assets/underscore-min.js"></script>
-  <script src="/assets/backbone.js"></script>
-  <script src="/assets/ejs_production.js"></script>
-  <script src="/assets/backbone.localStorage-min.js"></script>
-  <script src="/assets/boot.js"></script>
-  <script src="/assets/models/project.js"></script>
-  <script src="/assets/models/user.js"></script>
-  <script src="/assets/templates/project-template.jst.ejs"></script>
-  <script src="/assets/templates/user-template.jst.ejs"></script>
-  <script src="/assets/templates/user-list-template.jst.ejs"></script>
-  <script src="/assets/collections/project_list.js"></script>
-  <script src="/assets/collections/user_list.js"></script>
-  <script src="/assets/views/project_view.js"></script>
-  <script src="/assets/views/user_view.js"></script>
-  <script src="/assets/app.js"></script>
-  <script src="/assets/views/user_list_view.js"></script>
-  <script src="/assets/routes.js"></script>
-  -->
 </body>
 
 </html>

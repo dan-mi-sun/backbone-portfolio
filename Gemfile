@@ -16,4 +16,5 @@ group :development, :test do
   gem 'faker'
   gem 'pry-byebug'
   gem 'database_cleaner'
+  gem 'shoulda-matchers'
 end
