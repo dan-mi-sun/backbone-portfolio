@@ -1,6 +1,11 @@
 class UsersController < ApplicationController
   def index
-    render :json => User.all
+    @users = User.all
+
+    respond_to do |format|
+      format.html
+      format.json { render :json => @users }
+    end
   end
 
   def show
@@ -10,6 +15,13 @@ class UsersController < ApplicationController
 
   def create
     @user = User.create(allowed_params)
+    @user.save
+    render :json => @user
+  end
+
+  def update
+    @user = User.find(params[:id])
+    @user.update(allowed_params)
     @user.save
     render :json => @user
   end
