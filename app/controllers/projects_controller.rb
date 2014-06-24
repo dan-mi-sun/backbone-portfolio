@@ -1,7 +1,9 @@
 class ProjectsController < ApplicationController
 
   def index
-    render :json => Project.all
+    render :json => Project.all.as_json(:include => {
+    :skills => {:only => [:id, :name, :project_id]}
+    }, :except => [:created_at, :updated_at])
   end
 
   def create

@@ -1,6 +1,6 @@
 app.collections.UserList = Backbone.Collection.extend({
 
   url: "/users",
-  model: app.models.User,
+  model: app.models.User
 
 });

@@ -7,15 +7,30 @@ describe UsersController do
       3.times {User.create(:name => "Me", :image_url => "/", :bio => Faker::Company.bs, :mission => Faker::Company.catch_phrase)}
     end
 
-    describe "GET to /users" do
-      before do
-        get :index
-      end
+    context "using JSON format" do
+      describe "GET to /users" do
+        before do
+          get :index, :format => :json
+        end
 
-      it "should give us some JSON with all the users" do
-        expect(response.content_type).to eq("application/json")
-        expect(response.status).to eq(200)
-        expect(JSON(response.body).length).to eq(3)
+        it "should give us some JSON with all the users" do
+          expect(response.content_type).to eq("application/json")
+          expect(response.status).to eq(200)
+          expect(JSON(response.body).length).to eq(3)
+        end
+      end
+    end
+
+    context "using HTML format" do
+      describe "GET to /users" do
+        before do
+          get :index
+        end
+
+        it "should give us some JSON with all the users" do
+          expect(response.content_type).to eq("text/html")
+          expect(response.status).to eq(200)
+        end
       end
     end
   end
@@ -64,7 +79,7 @@ describe UsersController do
 
       params = {id: @user.id}
 
-      get :show, params
+      get :show, params, :format => :json
     end
 
     it "should give us some JASON with the users details" do

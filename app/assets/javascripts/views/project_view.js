@@ -7,9 +7,24 @@ app.views.ProjectView = Backbone.View.extend({
     'dblclick .project-name': 'editProjectName',
     'keypress .edit-title': 'updateTitle'
   },
+  
+  initialize: functions() {
+    this.listenTo(this.model.skills, "add", this.render);
+  },
 
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
+
+    var skill_list = this.$el.find(".skill-list");
+    var _this = this;
+    skill_list.html('');
+    this.model.skills.each(function(skill) {
+      var skill_view = new app.views.SkillView({
+     model: skill,
+     collection: _this.
+      })
+    })
+    
     return this;
   },
 
@@ -27,5 +42,9 @@ app.views.ProjectView = Backbone.View.extend({
     this.model.set('title', new_title);
     this.model.save();
     this.$el.find('.edit-title').val('').hide().prev('h3').show().html(new_title);
+  }
+
+  addSkill: function(e) {
+    this.model.skills.add({});
   }
 });
