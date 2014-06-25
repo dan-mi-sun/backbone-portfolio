@@ -9,6 +9,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'ejs'
+gem 'oauth2'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.99.0'
