@@ -11,12 +11,9 @@ describe("A Project", function() {
 
   describe("fetching a project with skills", function() {
     beforeEach(function() {
-      // var dummyObject = {};
-      // spyOn($, "ajax").andReturn(dummyObject);
       var json = JSON.parse("{\"id\":null,\"title\":\"I love parsing\",\"url\":\"http://github.com\",\"skills\":[{\"id\":null,\"name\":\"Ruby\",\"project_id\":null},{\"id\":null,\"name\":\"JSON\",\"project_id\":null}]}");
-      project.set(project.parse(json));
 
-      // project.fetch();
+      project.set(project.parse(json));
     })
 
     it("should parse the essential details", function() {
@@ -43,13 +40,30 @@ describe("A Project", function() {
 
   describe("Persistance in local storage", function() {
     beforeEach(function() {
-      project.localStorage = new Backbone.LocalStorage('potfolio');
-      project.save();
+      spyOn($, 'ajax');
+      project.set("id", 1);
+      project.skills.add({ name: "JavaScript" });
     });
 
     it("should have an id", function() {
       expect(project.id).not.toBe(null);
     });
+  });
+
+  it("should send skills attributes", function() {
+    var expected_params = {
+      project: {
+        title: "My amazing test project", 
+        skills_attributes: [
+           { name: "JavaScript", project_id: 1 }
+        ]
+      }
+    };
+
+    var lastAjaxArgs = $.ajax.calls[0].args[0];
+    expect(lastAjaxArgs.data).toEqual(JSON.stringify(expected_params));
+    expect(lastAjaxArgs.type).toEqual("PUT");
+    expect(lastAjaxArgs.url).toEqual("/projects/1");
   });
 
   describe("validation", function() {
