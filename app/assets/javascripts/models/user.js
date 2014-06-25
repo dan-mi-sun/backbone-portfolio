@@ -1,11 +1,12 @@
 app.models.User = Backbone.Model.extend({
 
-  localStorage: new Backbone.LocalStorage('user'),
-  defaults: {
-    name: null,
-    bio: null,
-    mission: null
-  },
+  urlRoot: "/users",
+
+  // defaults: {
+  //   name: null,
+  //   bio: null,
+  //   mission: null
+  // },
 
   initialize: function () {
     this.projects = new app.collections.ProjectList();
@@ -15,15 +16,19 @@ app.models.User = Backbone.Model.extend({
   },
 
   validate: function() {
-    if(this.attributes.fullName === "" || this.get('fullName') === undefined) {
+    if(this.attributes.name === "" || this.get('name') === undefined) {
       return "Name can't be blank"; 
     };
   },
 
   fetchProjects: function() {
     if(this.id) {
-      this.projects.fetch();
-      this.projects.reset(this.projects.where({ user_id: this.id }));
+      var _this = this;
+      this.projects.fetch({
+        success: function(projects) {
+      _this.projects.reset(_this.projects.where({ user_id: _this.id }));
+        }
+      });
     }
   }
 });

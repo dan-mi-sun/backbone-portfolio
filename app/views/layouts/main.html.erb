@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Amazing Fat Client Portfolio Builder</title>
+  <%= stylesheet_link_tag :application %>
+</head>
+
+<body>
+
+  <section id="navigation">
+    <%= link_to "Login with Github", authorise_github_users_path, :class => "login github" %>
+  </section>
+
+  <main id="content">
+  <%= yield %>
+  </main>
+
+  <section id="footer">
+  </section>
+
+  <%= javascript_include_tag :application %>
+</body>
+
+</html>
