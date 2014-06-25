@@ -9,7 +9,7 @@ app.views.ProjectView = Backbone.View.extend({
      'click .add-skill': 'addSkill'
   },
   
-  initialize: functions() {
+  initialize: function() {
     this.listenTo(this.model, "change", this.render);
     this.listenTo(this.model.skills, "add", this.render);
     this.listenTo(this.model.skills, "remove", this.render);
@@ -24,7 +24,7 @@ app.views.ProjectView = Backbone.View.extend({
     this.model.skills.each(function(skill) {
       var skill_view = new app.views.SkillView({
      model: skill,
-     collection: _this.model.skills;
+     collection: _this.model.skills
       });
       skill_list.append(skill_view.render().el);
     });

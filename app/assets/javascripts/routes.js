@@ -20,6 +20,9 @@ app.Routes = Backbone.Router.extend({
         var userListView = new app.views.UserListView({ collection: users });
         userListView.render();
       },
+      error: function() {
+      console.log("Couldn't save the user...");
+      }
     });
   },
 

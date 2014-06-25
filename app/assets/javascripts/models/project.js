@@ -1,6 +1,6 @@
 app.models.Project = Backbone.Model.extend({
 
-  localStorage: new Backbone.LocalStorage('portfolio'),
+  // localStorage: new Backbone.LocalStorage('portfolio'),
 
   urlRoot:'/projects',
 

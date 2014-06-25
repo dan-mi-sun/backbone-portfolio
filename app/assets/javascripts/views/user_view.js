@@ -5,14 +5,20 @@ app.views.UserView = Backbone.View.extend({
   events: {
     "dblclick h1.name": "editAttribute",
     "change .edit-name": "updateName",
-    "dblclick h1.name": "editAttribute",
+    "dblclick h2.bio": "editAttribute",
     "change .edit-bio": "updateBio",
-    "dblclick h1.name": "editAttribute",
+    "dblclick h3.mission": "editAttribute",
     "change .edit-mission": "updateMission"
   },
 
+  initialize: function() {
+    this.listenTo(this.model, "change", this.render);
+    this.listenTo(this.model.projects, "reset", this.render);
+    return this;
+  },
+
   render: function() {
-  //Render the user bio section
+    //Render the user bio section
     var _this = this;
     _this.$el.html(_this.template(_this.model.attributes));
 
@@ -25,8 +31,7 @@ app.views.UserView = Backbone.View.extend({
       });
     }
 
-    //Clear old projects from view
-    $('#project-list').html("");
+    // $('#project-list').html("");
 
     // Render each project... sort of like a partial...
     _this.model.projects.each(function(project) {
@@ -35,9 +40,7 @@ app.views.UserView = Backbone.View.extend({
     });
 
     // Redraw the page if the user model changes
-    _this.listenTo(this.model, "change", this.render);
 
-    return _this;
   },
 
   editAttribute: function(e) {

@@ -1,10 +1,10 @@
 app.views.SkillView = Backbone.View.extend({
- 
 
-  tageName: 'li',
+  tagName: 'li',
   className: 'skill',
   template: '<span class="name">Ruby</span><span class="delete">Remove</span>',
   editBox: '<input type=text class=skillName placeholder="Skill Name" />',
+
   events: {
     'click .delete': "removeSkill",
     'dblclick .name': 'editName',
