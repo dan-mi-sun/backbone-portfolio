@@ -10,9 +10,9 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require underscore
 //= require jquery
 //= require jquery_ujs
+//= require underscore
 //= require_tree ./lib
 //= require boot
 //= require_tree ./models

@@ -1,7 +1,8 @@
 app.models.Project = Backbone.Model.extend({
 
-  // localStorage: new Backbone.LocalStorage('portfolio'),
-  urlRoot: "/projects",
+  localStorage: new Backbone.LocalStorage('portfolio'),
+
+  urlRoot:'/projects',
 
   initialize: function() {
     if(!this.skills) this.skills = new app.collections.SkillList();
@@ -10,21 +11,19 @@ app.models.Project = Backbone.Model.extend({
   },
 
   validate: function() {
-    if(this.attributes.url === "" || this.attributes.url === undefined) {
+    if(this.attributes.url === "") {
       return "URL can't be blank";
-       };
+    };
 
-    if(this.attributes.title === "" || this.attributes.title === undefined) {
-      return "URL can't be blank";
-       };
+    if(this.attributes.title === "") {
+      return "Title can't be blank";
+    };
+  },
 
   parse: function(response) {
     var _this = this;
-
     if(!this.skills) this.skills = new app.collections.SkillList();
-
-    this.skills.reset(response.skills, { silent: true });
-
+    this.skills.reset(response.skills, {silent: true});
     return response;
   },
 
@@ -44,7 +43,7 @@ app.models.Project = Backbone.Model.extend({
       params.skills_attributes.push(skill_info);
     });
 
-    return { project: params };
+    return {project: params};
   }
 
 });
