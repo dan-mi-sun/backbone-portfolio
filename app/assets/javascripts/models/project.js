@@ -4,13 +4,14 @@ app.models.Project = Backbone.Model.extend({
   url: "/projects",
 
   validate: function() {
-    if(this.attributes.url === "") {
+    if(this.attributes.url === "" || this.attributes.url === undefined) {
       return "URL can't be blank";
-    };
+       };
 
-    if(this.attributes.title === "") {
-      return "Title can't be blank";
-    };
+    if(this.attributes.title === "" || this.attributes.title === undefined) {
+      return "URL can't be blank";
+       };
+
   }
 
 });

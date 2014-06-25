@@ -9,7 +9,7 @@ describe UsersController do
 
     describe "GET to /users" do
       before do
-        get :index
+        get :index, :format => :json
       end
 
       it "should give us some JSON with all the users" do
@@ -70,7 +70,7 @@ describe UsersController do
     it "should give us some JASON with the users details" do
       expect(response.content_type).to eq("application/json")
       expect(response.status).to eq(200)
-      expect(JSON(response.body).first).to eq(["id", 1])
+      expect(JSON(response.body).first).to eq(["id", 8])
     end
 
     it "should set attributes on a user" do
@@ -92,7 +92,7 @@ describe UsersController do
     it "should return valid JSON" do
       expect(json = JSON(response.body)).to_not raise_error
       expect(json["name"]).to eq("Me")
-      expect(json["id"]).to eq(5)
+      expect(json["id"]).to eq(12)
     end
   end
 end
