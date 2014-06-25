@@ -5,11 +5,30 @@ app.views.ProjectView = Backbone.View.extend({
   template: JST['templates/project-template'],
   events: {
     'dblclick .project-name': 'editProjectName',
-    'keypress .edit-title': 'updateTitle'
+    'change .edit-title': 'updateTitle',
+     'click .add-skill': 'addSkill'
+  },
+  
+  initialize: functions() {
+    this.listenTo(this.model, "change", this.render);
+    this.listenTo(this.model.skills, "add", this.render);
+    this.listenTo(this.model.skills, "remove", this.render);
   },
 
   render: function() {
-    this.$el.html(this.template(this.model.toJSON()));
+    this.$el.html(this.template(this.model.attributes));
+
+    var skill_list = this.$el.find(".skill-list");
+    var _this = this;
+    skill_list.html('');
+    this.model.skills.each(function(skill) {
+      var skill_view = new app.views.SkillView({
+     model: skill,
+     collection: _this.model.skills;
+      });
+      skill_list.append(skill_view.render().el);
+    });
+    
     return this;
   },
 
@@ -20,12 +39,11 @@ app.views.ProjectView = Backbone.View.extend({
 
   updateTitle: function() {
     var new_title = this.$el.find('.edit-title').val().trim();
-    if(event.which !== 13 || !new_title) {
-      return;
-    }
-
     this.model.set('title', new_title);
-    this.model.save();
-    this.$el.find('.edit-title').val('').hide().prev('h3').show().html(new_title);
+     this.model.save();
+  },
+
+  addSkill: function(e) {
+    this.model.skills.add({name: 'Cool Beans'});
   }
 });
