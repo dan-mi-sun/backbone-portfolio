@@ -38,7 +38,6 @@ class UsersController < ApplicationController
   def github_oauth_callback
     access_token = github_oauth_client.auth_code.get_token(params[:code],
         :redirect_uri => github_oauth_callback_url)
-
     user_info = JSON(access_token.get('https://api.github.com/user').body).symbolize_keys
 
     github_id = user_info[:id]
