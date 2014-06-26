@@ -30,6 +30,7 @@ app.models.Project = Backbone.Model.extend({
   toJSON: function() {
     var params = {};
     params.title = this.get('title');
+    params.user_id = this.get('user_id');
     params.skills_attributes = [];
     var _this = this;
     this.skills.each(function(skill) {
