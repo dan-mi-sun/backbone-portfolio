@@ -38293,3 +38293,2462 @@ Processing by ProjectsController#update as JSON
   [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
   [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 13]]
 Completed 200 OK in 10ms (Views: 1.9ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-26 10:25:49 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/main (13.6ms)
+Completed 200 OK in 184ms (Views: 179.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/main (0.7ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/lib/backbone-min.js?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/lib/backbone.localStorage-min.js?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/lib/backbone.js?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/lib/ejs_production.js?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/boot.js?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/models/project.js?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/models/skill.js?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/models/user.js?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/collections/project_list.js?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/collections/skill_list.js?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/collections/user_list.js?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/templates/project-template.js?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/templates/user-list-template.js?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/templates/user-template.js?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/views/project_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/views/skill_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/views/user_list_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/views/user_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/routes.js?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+
+
+Started GET "/users" for 127.0.0.1 at 2014-06-26 10:25:50 +0100
+Processing by UsersController#index as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-06-26 10:25:52 +0100
+Processing by UsersController#show as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:25:52 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.5ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.8ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-06-26 10:25:52 +0100
+Processing by ProjectsController#index as JSON
+  [1m[35mProject Load (1.2ms)[0m  SELECT "projects".* FROM "projects"
+  [1m[36mSkill Load (1.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 1]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 2]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 3]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 4]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 5]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 6]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 7]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 8]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 9]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 10]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 11]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 12]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 13]]
+Completed 200 OK in 51ms (Views: 0.7ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/assets/add-button.png" for 127.0.0.1 at 2014-06-26 10:25:52 +0100
+
+
+Started GET "/assets/sort-arrows.png" for 127.0.0.1 at 2014-06-26 10:25:52 +0100
+
+
+Started GET "/assets/delete-icons.png" for 127.0.0.1 at 2014-06-26 10:25:52 +0100
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:25:52 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (13.5ms)
+
+
+Started GET "/assets/remove-button.png" for 127.0.0.1 at 2014-06-26 10:25:52 +0100
+
+
+Started PUT "/projects/13" for 127.0.0.1 at 2014-06-26 10:26:01 +0100
+Processing by ProjectsController#update as JSON
+  Parameters: {"project"=>{"title"=>"New Project", "user_id"=>7, "skills_attributes"=>[{"name"=>"Cool Beans", "project_id"=>13, "id"=>19, "_destroy"=>true}, {"name"=>"Cool Beans", "project_id"=>13, "id"=>20}, {"name"=>"Cool Beans", "project_id"=>13, "id"=>21}]}, "id"=>"13"}
+  [1m[35mProject Load (0.9ms)[0m  SELECT  "projects".* FROM "projects"  WHERE "projects"."id" = $1 LIMIT 1  [["id", 13]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSkill Load (0.8ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1 AND "skills"."id" IN (19, 20, 21)  [["project_id", 13]]
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "skills" WHERE "skills"."id" = $1[0m  [["id", 19]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 13]]
+Completed 200 OK in 17ms (Views: 1.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:26:01 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/main (1.7ms)
+Completed 200 OK in 50ms (Views: 48.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/assets/lib/backbone-min.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/assets/lib/backbone.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/assets/lib/backbone.localStorage-min.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/assets/lib/ejs_production.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/assets/boot.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/assets/models/project.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/assets/models/skill.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/assets/models/user.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/assets/collections/project_list.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/assets/collections/skill_list.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/assets/collections/user_list.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/assets/templates/user-list-template.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/assets/templates/user-template.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/assets/views/project_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/assets/views/skill_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/assets/views/user_list_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/assets/views/user_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/assets/routes.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+
+
+Started GET "/users" for 127.0.0.1 at 2014-06-26 10:27:49 +0100
+Processing by UsersController#index as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-06-26 10:27:51 +0100
+Processing by UsersController#show as JSON
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:27:51 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-06-26 10:27:51 +0100
+Processing by ProjectsController#index as JSON
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  [1m[35mSkill Load (0.5ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 1]]
+  [1m[36mSkill Load (1.4ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 2]]
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 3]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 4]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 5]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 6]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 7]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 8]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 9]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 10]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 11]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 12]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 13]]
+Completed 200 OK in 18ms (Views: 0.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:27:51 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.2ms)
+
+
+Started PUT "/projects/13" for 127.0.0.1 at 2014-06-26 10:27:53 +0100
+Processing by ProjectsController#update as JSON
+  Parameters: {"project"=>{"title"=>"New Project", "user_id"=>7, "skills_attributes"=>[{"name"=>"Cool Beans", "project_id"=>13, "id"=>20, "_destroy"=>true}, {"name"=>"Cool Beans", "project_id"=>13, "id"=>21}]}, "id"=>"13"}
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT  "projects".* FROM "projects"  WHERE "projects"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1 AND "skills"."id" IN (20, 21)[0m  [["project_id", 13]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "skills" WHERE "skills"."id" = $1  [["id", 20]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 13]]
+Completed 200 OK in 7ms (Views: 1.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:27:53 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (20.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/main (2.4ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/assets/lib/backbone-min.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/assets/lib/backbone.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/assets/lib/backbone.localStorage-min.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/assets/lib/ejs_production.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/assets/boot.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/assets/models/project.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/assets/models/skill.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/assets/models/user.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/assets/collections/project_list.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/assets/collections/skill_list.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/assets/collections/user_list.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/assets/templates/user-list-template.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/assets/templates/user-template.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/assets/views/project_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/assets/views/skill_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/assets/views/user_list_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/assets/views/user_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/assets/routes.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+
+
+Started GET "/users" for 127.0.0.1 at 2014-06-26 10:27:57 +0100
+Processing by UsersController#index as JSON
+  [1m[35mUser Load (1.2ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-06-26 10:27:59 +0100
+Processing by UsersController#show as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:27:59 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (17.6ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-06-26 10:27:59 +0100
+Processing by ProjectsController#index as JSON
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 1]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 2]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 3]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 4]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 5]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 6]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 7]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 8]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 9]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 10]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 11]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 12]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 13]]
+Completed 200 OK in 13ms (Views: 0.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:27:59 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.1ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:29:00 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (20.9ms)
+
+
+Started PUT "/users/7" for 127.0.0.1 at 2014-06-26 10:29:00 +0100
+Processing by UsersController#update as JSON
+  Parameters: {"id"=>"7", "name"=>"1", "bio"=>nil, "mission"=>"We Got Coders", "image_url"=>"https://avatars.githubusercontent.com/u/6864509?", "created_at"=>"2014-06-26T08:20:29.386Z", "updated_at"=>"2014-06-26T08:20:29.389Z", "github_id"=>6864509, "access_token"=>"5229394484b545d35a34e99a4c86862c8a1b4ede", "user"=>{"id"=>"7", "name"=>"1", "bio"=>nil, "mission"=>"We Got Coders", "image_url"=>"https://avatars.githubusercontent.com/u/6864509?", "created_at"=>"2014-06-26T08:20:29.386Z", "updated_at"=>"2014-06-26T08:20:29.389Z", "github_id"=>6864509, "access_token"=>"5229394484b545d35a34e99a4c86862c8a1b4ede"}}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+Unpermitted parameters: id, created_at, updated_at, github_id, access_token
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "name" = $1, "updated_at" = $2 WHERE "users"."id" = 7  [["name", "1"], ["updated_at", "2014-06-26 09:29:00.157336"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:29:00 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (18.7ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-06-26 10:29:00 +0100
+Processing by ProjectsController#index as JSON
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects"
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 1]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 2]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 3]]
+  [1m[35mSkill Load (0.5ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 4]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 5]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 6]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 7]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 8]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 9]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 10]]
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 11]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 12]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 13]]
+Completed 200 OK in 18ms (Views: 0.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:29:00 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (20.2ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:29:05 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.7ms)
+
+
+Started PUT "/users/7" for 127.0.0.1 at 2014-06-26 10:29:05 +0100
+Processing by UsersController#update as JSON
+  Parameters: {"id"=>"7", "name"=>"1", "bio"=>"2", "mission"=>"We Got Coders", "image_url"=>"https://avatars.githubusercontent.com/u/6864509?", "created_at"=>"2014-06-26T08:20:29.386Z", "updated_at"=>"2014-06-26T09:29:00.157Z", "github_id"=>6864509, "access_token"=>"5229394484b545d35a34e99a4c86862c8a1b4ede", "user"=>{"id"=>"7", "name"=>"1", "bio"=>"2", "mission"=>"We Got Coders", "image_url"=>"https://avatars.githubusercontent.com/u/6864509?", "created_at"=>"2014-06-26T08:20:29.386Z", "updated_at"=>"2014-06-26T09:29:00.157Z", "github_id"=>6864509, "access_token"=>"5229394484b545d35a34e99a4c86862c8a1b4ede"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+Unpermitted parameters: id, created_at, updated_at, github_id, access_token
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "bio" = $1, "updated_at" = $2 WHERE "users"."id" = 7  [["bio", "2"], ["updated_at", "2014-06-26 09:29:05.528989"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:29:05 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (18.2ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-06-26 10:29:05 +0100
+Processing by ProjectsController#index as JSON
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 1]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 2]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 3]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 4]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 5]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 6]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 7]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 8]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 9]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 10]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 11]]
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 12]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 13]]
+Completed 200 OK in 16ms (Views: 1.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:29:05 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (18.4ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:29:09 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (14.8ms)
+
+
+Started PUT "/users/7" for 127.0.0.1 at 2014-06-26 10:29:09 +0100
+Processing by UsersController#update as JSON
+  Parameters: {"id"=>"7", "name"=>"1", "bio"=>"2", "mission"=>"3", "image_url"=>"https://avatars.githubusercontent.com/u/6864509?", "created_at"=>"2014-06-26T08:20:29.386Z", "updated_at"=>"2014-06-26T09:29:05.528Z", "github_id"=>6864509, "access_token"=>"5229394484b545d35a34e99a4c86862c8a1b4ede", "user"=>{"id"=>"7", "name"=>"1", "bio"=>"2", "mission"=>"3", "image_url"=>"https://avatars.githubusercontent.com/u/6864509?", "created_at"=>"2014-06-26T08:20:29.386Z", "updated_at"=>"2014-06-26T09:29:05.528Z", "github_id"=>6864509, "access_token"=>"5229394484b545d35a34e99a4c86862c8a1b4ede"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+Unpermitted parameters: id, created_at, updated_at, github_id, access_token
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "mission" = $1, "updated_at" = $2 WHERE "users"."id" = 7  [["mission", "3"], ["updated_at", "2014-06-26 09:29:09.395185"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:29:09 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (17.0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-06-26 10:29:09 +0100
+Processing by ProjectsController#index as JSON
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 1]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 2]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 3]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 4]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 5]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 6]]
+  [1m[36mSkill Load (0.4ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 7]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 8]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 9]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 10]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 11]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 12]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 13]]
+Completed 200 OK in 18ms (Views: 0.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:29:09 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (15.5ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:29:13 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (14.3ms)
+
+
+Started PUT "/projects/13" for 127.0.0.1 at 2014-06-26 10:29:13 +0100
+Processing by ProjectsController#update as JSON
+  Parameters: {"project"=>{"title"=>"4", "user_id"=>7, "skills_attributes"=>[{"name"=>"Cool Beans", "project_id"=>13, "id"=>21}]}, "id"=>"13"}
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects"  WHERE "projects"."id" = $1 LIMIT 1  [["id", 13]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1 AND "skills"."id" IN (21)  [["project_id", 13]]
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "projects" SET "title" = $1, "updated_at" = $2 WHERE "projects"."id" = 13[0m  [["title", "4"], ["updated_at", "2014-06-26 09:29:13.401614"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 13]]
+Completed 200 OK in 9ms (Views: 2.2ms | ActiveRecord: 1.9ms)
+
+
+Started PUT "/projects/13" for 127.0.0.1 at 2014-06-26 10:29:16 +0100
+Processing by ProjectsController#update as JSON
+  Parameters: {"project"=>{"title"=>"4", "user_id"=>7, "skills_attributes"=>[{"name"=>"Cool Beans", "project_id"=>13, "id"=>21}]}, "id"=>"13"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT  "projects".* FROM "projects"  WHERE "projects"."id" = $1 LIMIT 1  [["id", 13]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1 AND "skills"."id" IN (21)  [["project_id", 13]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 13]]
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:29:16 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.5ms)
+
+
+Started PUT "/projects/13" for 127.0.0.1 at 2014-06-26 10:29:23 +0100
+Processing by ProjectsController#update as JSON
+  Parameters: {"project"=>{"title"=>"4", "user_id"=>7, "skills_attributes"=>[{"name"=>"Cool Beans", "project_id"=>13, "id"=>21}]}, "id"=>"13"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT  "projects".* FROM "projects"  WHERE "projects"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1 AND "skills"."id" IN (21)[0m  [["project_id", 13]]
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 13]]
+Completed 200 OK in 6ms (Views: 1.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:29:23 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.5ms)
+
+
+Started PUT "/projects/13" for 127.0.0.1 at 2014-06-26 10:29:27 +0100
+Processing by ProjectsController#update as JSON
+  Parameters: {"project"=>{"title"=>"4", "user_id"=>7, "skills_attributes"=>[{"name"=>"Cool Beans", "project_id"=>13, "id"=>21}]}, "id"=>"13"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT  "projects".* FROM "projects"  WHERE "projects"."id" = $1 LIMIT 1  [["id", 13]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1 AND "skills"."id" IN (21)  [["project_id", 13]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 13]]
+Completed 200 OK in 6ms (Views: 1.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:29:27 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/main (1.2ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/lib/backbone-min.js?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/assets/lib/backbone.js?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/assets/lib/backbone.localStorage-min.js?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/assets/lib/ejs_production.js?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/assets/boot.js?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/assets/models/project.js?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/assets/models/skill.js?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/assets/models/user.js?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/assets/collections/project_list.js?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/assets/collections/skill_list.js?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/assets/collections/user_list.js?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/assets/templates/user-list-template.js?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/assets/templates/user-template.js?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/assets/views/project_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/assets/views/skill_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/assets/views/user_list_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/assets/views/user_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/assets/routes.js?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+
+
+Started GET "/users" for 127.0.0.1 at 2014-06-26 10:29:30 +0100
+Processing by UsersController#index as JSON
+  [1m[35mUser Load (2.6ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-06-26 10:29:31 +0100
+Processing by UsersController#show as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:29:31 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.3ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-06-26 10:29:31 +0100
+Processing by ProjectsController#index as JSON
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 1]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 2]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 3]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 4]]
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 5]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 6]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 7]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 8]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 9]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 10]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 11]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 12]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 13]]
+Completed 200 OK in 16ms (Views: 0.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:29:31 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (17.3ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-06-26 10:48:07 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+Completed 500 Internal Server Error in 4ms
+
+ActionView::MissingTemplate (Missing template users/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder]}. Searched in:
+  * "/Users/danielsun/projects/wgc/backbone_portfolio/app/views"
+):
+  app/controllers/users_controller.rb:13:in `show'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/main (0.7ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/lib/backbone-min.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/lib/backbone.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/lib/backbone.localStorage-min.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/lib/ejs_production.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/boot.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/models/project.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/models/skill.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/models/user.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/collections/project_list.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/collections/skill_list.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/collections/user_list.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/templates/project-template.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/templates/user-list-template.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/templates/user-template.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/views/project_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/views/skill_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/views/user_list_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/views/user_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/routes.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/main (0.8ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:12 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:13 +0100
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:13 +0100
+
+
+Started GET "/assets/lib/backbone-min.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:13 +0100
+
+
+Started GET "/assets/lib/backbone.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:13 +0100
+
+
+Started GET "/assets/lib/backbone.localStorage-min.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:13 +0100
+
+
+Started GET "/assets/lib/ejs_production.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:13 +0100
+
+
+Started GET "/assets/boot.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:13 +0100
+
+
+Started GET "/assets/models/project.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:13 +0100
+
+
+Started GET "/assets/models/skill.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:13 +0100
+
+
+Started GET "/assets/models/user.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:13 +0100
+
+
+Started GET "/assets/collections/project_list.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:13 +0100
+
+
+Started GET "/assets/collections/skill_list.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:13 +0100
+
+
+Started GET "/assets/collections/user_list.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:13 +0100
+
+
+Started GET "/assets/templates/project-template.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:13 +0100
+
+
+Started GET "/assets/templates/user-list-template.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:13 +0100
+
+
+Started GET "/assets/templates/user-template.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:13 +0100
+
+
+Started GET "/assets/views/project_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:13 +0100
+
+
+Started GET "/assets/views/skill_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:13 +0100
+
+
+Started GET "/assets/views/user_list_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:13 +0100
+
+
+Started GET "/assets/views/user_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:13 +0100
+
+
+Started GET "/assets/routes.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:13 +0100
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:13 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:13 +0100
+
+
+Started GET "/users" for 127.0.0.1 at 2014-06-26 10:48:13 +0100
+Processing by UsersController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-06-26 10:48:15 +0100
+Processing by UsersController#show as JSON
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:48:15 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (17.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-06-26 10:48:15 +0100
+Processing by ProjectsController#index as JSON
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 1]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 2]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 3]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 4]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 5]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 6]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 7]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 8]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 9]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 10]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 11]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 12]]
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 13]]
+Completed 200 OK in 14ms (Views: 1.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/sort-arrows.png" for 127.0.0.1 at 2014-06-26 10:48:15 +0100
+
+
+Started GET "/assets/delete-icons.png" for 127.0.0.1 at 2014-06-26 10:48:15 +0100
+
+
+Started GET "/assets/add-button.png" for 127.0.0.1 at 2014-06-26 10:48:15 +0100
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:48:15 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (18.8ms)
+
+
+Started GET "/assets/remove-button.png" for 127.0.0.1 at 2014-06-26 10:48:15 +0100
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:48:17 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.2ms)
+
+
+Started PUT "/projects/13" for 127.0.0.1 at 2014-06-26 10:48:17 +0100
+Processing by ProjectsController#update as JSON
+  Parameters: {"project"=>{"title"=>"4", "user_id"=>7, "skills_attributes"=>[{"name"=>"Cool Beans", "project_id"=>13, "id"=>21}, {"name"=>"Cool Beans", "project_id"=>13}]}, "id"=>"13"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT  "projects".* FROM "projects"  WHERE "projects"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1 AND "skills"."id" IN (21)[0m  [["project_id", 13]]
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "skills" ("created_at", "name", "project_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-06-26 09:48:17.683211"], ["name", "Cool Beans"], ["project_id", 13], ["updated_at", "2014-06-26 09:48:17.683211"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 13]]
+Completed 200 OK in 8ms (Views: 1.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:48:17 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (15.4ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:48:20 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (20.7ms)
+
+
+Started PUT "/projects/13" for 127.0.0.1 at 2014-06-26 10:48:20 +0100
+Processing by ProjectsController#update as JSON
+  Parameters: {"project"=>{"title"=>"4", "user_id"=>7, "skills_attributes"=>[{"name"=>"Cool Beans", "project_id"=>13, "id"=>21}, {"name"=>"Cool Beans", "project_id"=>13, "id"=>22}, {"name"=>"Cool Beans", "project_id"=>13}]}, "id"=>"13"}
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT  "projects".* FROM "projects"  WHERE "projects"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1 AND "skills"."id" IN (21, 22)[0m  [["project_id", 13]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "skills" ("created_at", "name", "project_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-06-26 09:48:20.857651"], ["name", "Cool Beans"], ["project_id", 13], ["updated_at", "2014-06-26 09:48:20.857651"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 13]]
+Completed 200 OK in 10ms (Views: 1.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:48:20 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (13.5ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:48:21 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (13.7ms)
+
+
+Started PUT "/projects/13" for 127.0.0.1 at 2014-06-26 10:48:21 +0100
+Processing by ProjectsController#update as JSON
+  Parameters: {"project"=>{"title"=>"4", "user_id"=>7, "skills_attributes"=>[{"name"=>"Cool Beans", "project_id"=>13, "id"=>21}, {"name"=>"Cool Beans", "project_id"=>13, "id"=>22, "_destroy"=>true}, {"name"=>"Cool Beans", "project_id"=>13, "id"=>23}]}, "id"=>"13"}
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT  "projects".* FROM "projects"  WHERE "projects"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1 AND "skills"."id" IN (21, 22, 23)[0m  [["project_id", 13]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "skills" WHERE "skills"."id" = $1  [["id", 22]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 13]]
+Completed 200 OK in 9ms (Views: 1.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:48:22 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.6ms)
+
+
+Started PUT "/projects/13" for 127.0.0.1 at 2014-06-26 10:48:22 +0100
+Processing by ProjectsController#update as JSON
+  Parameters: {"project"=>{"title"=>"4", "user_id"=>7, "skills_attributes"=>[{"name"=>"Cool Beans", "project_id"=>13, "id"=>21}, {"name"=>"Cool Beans", "project_id"=>13, "id"=>23, "_destroy"=>true}]}, "id"=>"13"}
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT  "projects".* FROM "projects"  WHERE "projects"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1 AND "skills"."id" IN (21, 23)[0m  [["project_id", 13]]
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "skills" WHERE "skills"."id" = $1  [["id", 23]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mSkill Load (0.4ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 13]]
+Completed 200 OK in 8ms (Views: 1.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:48:22 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (20.7ms)
+
+
+Started PUT "/projects/13" for 127.0.0.1 at 2014-06-26 10:48:28 +0100
+Processing by ProjectsController#update as JSON
+  Parameters: {"project"=>{"title"=>"4", "user_id"=>7, "skills_attributes"=>[{"name"=>"Hello", "project_id"=>13, "id"=>21}]}, "id"=>"13"}
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT  "projects".* FROM "projects"  WHERE "projects"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1 AND "skills"."id" IN (21)[0m  [["project_id", 13]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "skills" SET "name" = $1, "updated_at" = $2 WHERE "skills"."id" = 21  [["name", "Hello"], ["updated_at", "2014-06-26 09:48:28.344211"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 13]]
+Completed 200 OK in 7ms (Views: 1.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:48:28 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/main (0.7ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/lib/backbone-min.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/lib/backbone.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/lib/backbone.localStorage-min.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/lib/ejs_production.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/boot.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/models/project.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/models/skill.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/models/user.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/collections/project_list.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/collections/skill_list.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/collections/user_list.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/templates/project-template.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/templates/user-list-template.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/templates/user-template.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/views/project_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/views/skill_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/views/user_list_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/views/user_view.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/routes.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+
+
+Started GET "/users" for 127.0.0.1 at 2014-06-26 10:48:31 +0100
+Processing by UsersController#index as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-06-26 10:48:33 +0100
+Processing by UsersController#show as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:48:33 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (20.4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-06-26 10:48:33 +0100
+Processing by ProjectsController#index as JSON
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 1]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 2]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 3]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 4]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 5]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 6]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 7]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 8]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 9]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 10]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 11]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 12]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 13]]
+Completed 200 OK in 14ms (Views: 0.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 10:48:33 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-26 17:13:48 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/main (1.0ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-26 17:13:48 +0100
+
+
+Started GET "/assets/lib/backbone-min.js?body=1" for 127.0.0.1 at 2014-06-26 17:13:48 +0100
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-26 17:13:48 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-26 17:13:48 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-26 17:13:48 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-26 17:13:48 +0100
+
+
+Started GET "/assets/lib/backbone.js?body=1" for 127.0.0.1 at 2014-06-26 17:13:48 +0100
+
+
+Started GET "/assets/lib/backbone.localStorage-min.js?body=1" for 127.0.0.1 at 2014-06-26 17:13:48 +0100
+
+
+Started GET "/assets/lib/ejs_production.js?body=1" for 127.0.0.1 at 2014-06-26 17:13:48 +0100
+
+
+Started GET "/assets/boot.js?body=1" for 127.0.0.1 at 2014-06-26 17:13:48 +0100
+
+
+Started GET "/assets/models/project.js?body=1" for 127.0.0.1 at 2014-06-26 17:13:48 +0100
+
+
+Started GET "/assets/models/skill.js?body=1" for 127.0.0.1 at 2014-06-26 17:13:48 +0100
+
+
+Started GET "/assets/models/user.js?body=1" for 127.0.0.1 at 2014-06-26 17:13:48 +0100
+
+
+Started GET "/assets/collections/project_list.js?body=1" for 127.0.0.1 at 2014-06-26 17:13:48 +0100
+
+
+Started GET "/assets/collections/skill_list.js?body=1" for 127.0.0.1 at 2014-06-26 17:13:48 +0100
+
+
+Started GET "/assets/collections/user_list.js?body=1" for 127.0.0.1 at 2014-06-26 17:13:48 +0100
+
+
+Started GET "/assets/templates/project-template.js?body=1" for 127.0.0.1 at 2014-06-26 17:13:48 +0100
+
+
+Started GET "/assets/templates/user-list-template.js?body=1" for 127.0.0.1 at 2014-06-26 17:13:48 +0100
+
+
+Started GET "/assets/templates/user-template.js?body=1" for 127.0.0.1 at 2014-06-26 17:13:48 +0100
+
+
+Started GET "/assets/views/project_view.js?body=1" for 127.0.0.1 at 2014-06-26 17:13:48 +0100
+
+
+Started GET "/assets/views/skill_view.js?body=1" for 127.0.0.1 at 2014-06-26 17:13:49 +0100
+
+
+Started GET "/assets/views/user_list_view.js?body=1" for 127.0.0.1 at 2014-06-26 17:13:49 +0100
+
+
+Started GET "/assets/views/user_view.js?body=1" for 127.0.0.1 at 2014-06-26 17:13:49 +0100
+
+
+Started GET "/assets/routes.js?body=1" for 127.0.0.1 at 2014-06-26 17:13:49 +0100
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-06-26 17:13:49 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-26 17:13:49 +0100
+
+
+Started GET "/users" for 127.0.0.1 at 2014-06-26 17:13:49 +0100
+Processing by UsersController#index as JSON
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2014-06-26 17:14:02 +0100
+Processing by UsersController#show as JSON
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/uploads/me.jpg" for 127.0.0.1 at 2014-06-26 17:14:02 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/me.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.3ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-06-26 17:14:02 +0100
+Processing by ProjectsController#index as JSON
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 1]]
+  [1m[36mSkill Load (0.4ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 2]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 3]]
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 4]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 5]]
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 6]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 7]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 8]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 9]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 10]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 11]]
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1[0m  [["project_id", 12]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT "skills".* FROM "skills"  WHERE "skills"."project_id" = $1  [["project_id", 13]]
+Completed 200 OK in 15ms (Views: 0.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users/uploads/project.jpg" for 127.0.0.1 at 2014-06-26 17:14:02 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/project.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (18.5ms)
+
+
+Started GET "/users/uploads/me.jpg" for 127.0.0.1 at 2014-06-26 17:14:02 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/uploads/me.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/danielsun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/danielsun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (14.8ms)
