@@ -1,4 +1,10 @@
-# Backbone Portfolio - WGC Week 9 Coursework 
+# We Got Coders Week 9 Coursework 
+
+We Got Coders is a consultancy that provides experts in agile web development, specialising in Ruby technology.
+
+wegotcoders.com/
+
+## Backbone Portfolio
 
 Using Jasmine TDD we built a front-end rich client experience, that builds an on-line work portfolio. 
 
