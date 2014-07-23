@@ -20,6 +20,7 @@ https://github.com/dan-mi-sun/backbone-portfolio/blob/master/BRIEF.md
 - Rails
 - Following gem built in Sinatra
 - OAuth logins with Github
+- Front-end rich client experience
 
 ####Notes from WeGotCoders:
 http://dan-mi-sun.github.io/
